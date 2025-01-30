@@ -13,12 +13,22 @@ public abstract class Animal {
         this.size = size;
         this.specialCare = specialCare;
     }
-
+    /**
+     * method for feeding animals
+     * @param happiness
+     * @return happiness is 5 more
+     */
     public int feeding(int happiness){
         return happiness +5;
 
     }
-    public int playing(){
+
+    /**
+     * method for playing with animals
+     * @param happiness
+     * @return happiness is 10 more
+     */
+    public int playing(int happiness){
         return happiness +10;
     }
     @Override

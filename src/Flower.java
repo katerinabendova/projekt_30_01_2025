@@ -21,6 +21,12 @@ public abstract class Flower {
         this.freePlace = plotSize -= neededArea;
     }
 
+    /**
+     * method for adding new plant
+     * @param plantNumber
+     * @param freePlace
+     * @return if i can plant a plant
+     */
     public boolean addPlant( int plantNumber, double freePlace){
 
         if (freePlace == 0) {
@@ -32,10 +38,22 @@ public abstract class Flower {
         return true;
     }
 
+    /**
+     * method for watering plants
+     * @param growth
+     * @return increased growth by 1
+     */
     public int watering(int growth){
         return growth++;
     }
 
+    /**
+     * method for harvesting
+     * @param freePlace
+     * @param growth
+     * @param neededArea
+     * @return if the plant reaches size 10 it will be harvested
+     */
     public double harvesting(double freePlace, int growth, double neededArea){
         if (growth == 10){
             return freePlace + neededArea;
