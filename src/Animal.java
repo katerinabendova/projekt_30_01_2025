@@ -4,7 +4,15 @@ public abstract class Animal {
     protected String name;
     protected Size size;
     protected String specialCare;
+    protected int happiness;
 
+    public int feeding(int happiness){
+        return happiness +5;
+
+    }
+    public int playing(){
+        return happiness +10;
+    }
     @Override
     public String toString() {
         return "Animal{" +
