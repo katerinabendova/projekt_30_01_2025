@@ -6,6 +6,14 @@ public abstract class Animal {
     protected String specialCare;
     protected int happiness;
 
+    public Animal(String type, String name, int happiness, Size size, String specialCare) {
+        this.type = type;
+        this.name = name;
+        this.happiness = happiness;
+        this.size = size;
+        this.specialCare = specialCare;
+    }
+
     public int feeding(int happiness){
         return happiness +5;
 
