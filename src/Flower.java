@@ -7,6 +7,7 @@ public abstract class Flower {
     protected int plantNumber;
     protected double plotSize;
     protected double freePlace;
+    protected int growth;
 
     public void setPlotSize(double plotSize) {
         this.plotSize = 10000; //m^2
@@ -29,6 +30,17 @@ public abstract class Flower {
             return false;
         }
         return true;
+    }
+
+    public int watering(int growth){
+        return growth++;
+    }
+
+    public double harvesting(double freePlace, int growth, double neededArea){
+        if (growth == 10){
+            return freePlace + neededArea;
+        }
+        return 0;
     }
 
 
