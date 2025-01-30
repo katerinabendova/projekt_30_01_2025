@@ -23,6 +23,7 @@ public abstract class Animal {
 
     }
 
+
     /**
      * method for playing with animals
      * @param happiness
