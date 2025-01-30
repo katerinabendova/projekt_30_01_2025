@@ -2,11 +2,7 @@ public class Farm {
     private int barnSize;
     private int bigA;
     private int smallA;
-    protected String species;
-    protected String name;
-    protected Size size;
-    protected boolean specialCare;
-    protected int happiness;
+
 
     public void setBarnSize(int barnSize) {
         this.barnSize = 20;
@@ -24,19 +20,9 @@ public class Farm {
         this.barnSize = barnSize;
         this.bigA = bigA;
         this.smallA = smallA;
-        this.species = species;
-        this.name = name;
-        this.size = size;
-        this.specialCare = specialCare;
-    }
-
-    public int feeding(int happiness){
-        return happiness +5;
 
     }
 
-    public int playing(){
-        return happiness +10;
-    }
+
 
 }
